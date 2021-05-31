@@ -2,16 +2,19 @@
 #include<string.h>
 int main(int argc,char **argv)
 {
+	argc=3;
     FILE *fp = NULL;
     char buff[255];
     char *p;
     int count=0;
     int i=0;
-    /*printf("argc:%d\n",argc);
-    for (int i = 0; i < argc; i++)
-    {
-        printf("argv[i]:%s\n",argv[i]);
-    }*/
+    
+//    printf("argc:%d\n",argc);
+//    for ( i = 0; i < argc; i++)
+//    {
+//        printf("argv[i]:%s\n",argv[i]);
+//    }
+    
     if(argc==3){
         if (!strcmp(argv[1],"-w"))
         {
